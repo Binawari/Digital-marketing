@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Pro - Your Success Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Digital Marketing Pro</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Grow Your Business with Digital Marketing</h1>
+                <p class="hero-description">
+                    Transform your online presence with our comprehensive digital marketing strategies. 
+                    From SEO to social media, we help businesses thrive in the digital world.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openModal('consultation-modal')">
+                        Get Free Consultation
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('services')">
+                        Our Services
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/placeholder.svg?height=400&width=500" alt="Digital Marketing Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Digital Marketing Services</h2>
+                <p>Comprehensive solutions to boost your online presence</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="seo">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Search Engine Optimization</h3>
+                    <p>Improve your website's visibility and rank higher on search engines with our proven SEO strategies.</p>
+                    <button class="btn btn-outline" onclick="openServiceModal('seo')">Learn More</button>
+                </div>
+                <div class="service-card" data-service="social">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Build brand awareness and engage with your audience across all major social media platforms.</p>
+                    <button class="btn btn-outline" onclick="openServiceModal('social')">Learn More</button>
+                </div>
+                <div class="service-card" data-service="ppc">
+                    <div class="service-icon">
+                        <i class="fas fa-mouse-pointer"></i>
+                    </div>
+                    <h3>Pay-Per-Click Advertising</h3>
+                    <p>Drive targeted traffic and maximize ROI with strategic PPC campaigns on Google and social platforms.</p>
+                    <button class="btn btn-outline" onclick="openServiceModal('ppc')">Learn More</button>
+                </div>
+                <div class="service-card" data-service="content">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h3>Content Marketing</h3>
+                    <p>Create compelling content that attracts, engages, and converts your target audience.</p>
+                    <button class="btn btn-outline" onclick="openServiceModal('content')">Learn More</button>
+                </div>
+                <div class="service-card" data-service="email">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Marketing</h3>
+                    <p>Build relationships and drive sales with personalized email campaigns that convert.</p>
+                    <button class="btn btn-outline" onclick="openServiceModal('email')">Learn More</button>
+                </div>
+                <div class="service-card" data-service="analytics">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>Track performance and make data-driven decisions with comprehensive analytics and reporting.</p>
+                    <button class="btn btn-outline" onclick="openServiceModal('analytics')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1200">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="98">0</div>
+                    <div class="stat-label">Success Rate %</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">24/7 Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Digital Marketing Pro</h2>
+                    <p>
+                        With over 10 years of experience in digital marketing, we've helped hundreds of businesses 
+                        achieve their online goals. Our team of experts specializes in creating customized strategies 
+                        that drive real results.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Proven Track Record</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Team</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Customized Solutions</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/placeholder.svg?height=400&width=500" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Marketing Insights</h2>
+                <p>Stay updated with the latest trends and tips in digital marketing</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="SEO Tips">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Dec 15, 2024</span>
+                            <span class="blog-category">SEO</span>
+                        </div>
+                        <h3>10 SEO Tips to Boost Your Rankings in 2024</h3>
+                        <p>Discover the latest SEO strategies that will help your website rank higher...</p>
+                        <a href="#" class="blog-link">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Social Media">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Dec 12, 2024</span>
+                            <span class="blog-category">Social Media</span>
+                        </div>
+                        <h3>Social Media Trends That Will Dominate 2024</h3>
+                        <p>Stay ahead of the curve with these emerging social media trends...</p>
+                        <a href="#" class="blog-link">Read More</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <img src="/placeholder.svg?height=200&width=300" alt="Email Marketing">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">Dec 10, 2024</span>
+                            <span class="blog-category">Email Marketing</span>
+                        </div>
+                        <h3>Email Marketing Best Practices for Higher Conversions</h3>
+                        <p>Learn how to create email campaigns that actually convert...</p>
+                        <a href="#" class="blog-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to grow your business? Let's discuss your digital marketing needs</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Marketing Street, Digital City, DC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@digitalmarketingpro.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="seo">SEO</option>
+                            <option value="social">Social Media Marketing</option>
+                            <option value="ppc">PPC Advertising</option>
+                            <option value="content">Content Marketing</option>
+                            <option value="email">Email Marketing</option>
+                            <option value="analytics">Analytics & Reporting</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Digital Marketing Pro</h3>
+                    <p>Your trusted partner for digital marketing success. We help businesses grow their online presence and achieve their goals.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">SEO</a></li>
+                        <li><a href="#services">Social Media Marketing</a></li>
+                        <li><a href="#services">PPC Advertising</a></li>
+                        <li><a href="#services">Content Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest marketing tips and updates.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Digital Marketing Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="consultation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('consultation-modal')">&times;</span>
+            <h2>Free Consultation</h2>
+            <form id="consultation-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Your Phone" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Budget Range</option>
+                        <option value="1000-5000">$1,000 - $5,000</option>
+                        <option value="5000-10000">$5,000 - $10,000</option>
+                        <option value="10000+">$10,000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Tell us about your business goals" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Schedule Consultation</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('service-modal')">&times;</span>
+            <div id="service-modal-content">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
